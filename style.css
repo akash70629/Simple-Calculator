@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+
+html,
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #7b4397, #ed3945);
+}
+
+.float-container {
+    height: 630px;
+    width: 400px;
+    border: 1px solid #060505;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.float-child {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0px;
+}
+
+.button {
+    width: 75px;
+    margin: 8px;
+    border: 2px solid black;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 15px;
+    height: 80px;
+}
+
+.top {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.input {
+    width: 85%;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.button:hover {
+    background: rgb(125, 82, 206);
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: transparent;
+    text-align: center;
+}
+
+.footer-content h4 {
+    padding-top: 50px;
+    margin: 0px;
+}
+
+@media only screen and (max-width: 650px) {
+    .float-container {
+        height: 630px;
+        width: 380px;
+    }
+
+    .button {
+        width: 75px;
+        padding: 25px;
+    }
+
+    .input {
+        width: 320px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .float-container {
+        height: 550px;
+        width: 350px;
+        margin-top: 70px;
+    }
+
+    .button {
+        width: 70px;
+        height: 65px;
+    }
+
+    .input {
+        width: 310px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .float-container {
+        width: 320px;
+    }
+
+    .button {
+        width: 64px;
+    }
+
+    .input {
+        width: 280px;
+    }
+}
