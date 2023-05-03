@@ -5,17 +5,18 @@ body {
     margin: 0px;
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(to right, #7b4397, #ed3945);
+    overflow: hidden;
 }
 
 .float-container {
     height: 630px;
     width: 400px;
     border: 1px solid #060505;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     align-items: center;
     border-radius: 10px;
-    margin-top: 40px;
+    margin: 40px auto 0px auto;
 }
 
 .float-child {
@@ -53,24 +54,30 @@ body {
 .button:hover {
     background: rgb(125, 82, 206);
     color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 h1 {
     text-align: center;
 }
 
-footer {
-    position: absolute;
+.footer1 {
+    /* position: relative;
     bottom: 0;
     left: 0;
-    right: 0;
+    right: 0; */
     background: transparent;
     text-align: center;
+    height: 20px;
 }
 
-.footer-content h4 {
-    padding-top: 50px;
-    margin: 0px;
+.footer-content{
+/* height: 20px; */
+}
+h4 {
+   /* height: 20px; */
+    /* padding-top: 5px; */
+    margin-top: 10px;
 }
 
 @media only screen and (max-width: 650px) {
@@ -94,7 +101,7 @@ footer {
     .float-container {
         height: 550px;
         width: 350px;
-        margin-top: 70px;
+        /* margin-top: 70px; */
     }
 
     .button {
