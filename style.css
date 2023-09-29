@@ -12,6 +12,8 @@ body {
     height: 630px;
     width: 400px;
     border: 1px solid #060505;
+    /* margin-left: auto;
+    margin-right: auto; */
     align-items: center;
     border-radius: 10px;
     margin: 40px auto 0px auto;
@@ -59,15 +61,22 @@ h1 {
     text-align: center;
 }
 
-.footer {
-  
+.footer1 {
+    /* position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0; */
     background: transparent;
     text-align: center;
     height: 20px;
 }
 
-
+.footer-content{
+/* height: 20px; */
+}
 h4 {
+   /* height: 20px; */
+    /* padding-top: 5px; */
     margin-top: 10px;
 }
 
@@ -92,6 +101,7 @@ h4 {
     .float-container {
         height: 550px;
         width: 350px;
+        /* margin-top: 70px; */
     }
 
     .button {
