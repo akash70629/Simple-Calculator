@@ -5,19 +5,13 @@ Array.from(buttons).forEach((button) => {
     button.addEventListener('click', (e) => {
 
         if (e.target.innerHTML == '=') {
-                 // Check if the string contains a '%' sign
-            if (string.includes('%')) {
+           string = eval(string);
+            document.querySelector('input').value = string;
+        }
+            
+       else if (string.includes('%')) {
                 // If it does, convert it to a decimal value for calculation
                 string = string.replace('%', '/100*');
-            }
-            // Evaluate the expression
-            try {
-                string = eval(string);
-                document.querySelector('input').value = string;
-            } catch (error) {
-                // Handle evaluation errors, e.g., if the expression is invalid
-                document.querySelector('input').value = 'Error';
-                string = ''; // Clear the string in case of an error
             }
 
         else if (e.target.innerHTML == 'AC') {
