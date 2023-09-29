@@ -9,11 +9,6 @@ Array.from(buttons).forEach((button) => {
             document.querySelector('input').value = string;
         }
             
-       else if (string.includes('%')) {
-                // If it does, convert it to a decimal value for calculation
-                string = string.replace('%', '/100*');
-            }
-
         else if (e.target.innerHTML == 'AC') {
             string = ""
             document.querySelector('input').value = string;
